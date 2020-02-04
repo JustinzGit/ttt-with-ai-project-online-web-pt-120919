@@ -24,11 +24,7 @@ module Players
         if combo.count {|i| board.cells[i] == opponent_token} == 2 
           position = combo.select {|i| board.cells[i] != opponent_token}
           return position[0] + 1 if board.valid_move?(position[0] + 1)
-        elsif combo.count {|i| board.cells[i] == self.token} == 2 
-          position = combo.select {|i| board.cells[i] != self.token}
-          return position[0] + 1 if board.valid_move?(position[0] + 1)
         end 
-      end 
       
       # If not close to winning, choose a random position
       position = rand(1..9)
