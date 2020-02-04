@@ -35,7 +35,16 @@ class GameController
   
   def wargames
     game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
-    10.times do game.play
+    
+    player_x = 0 
+    player_o = 0
+    draw = 0
+    
+    10.times do 
+      game.play
+      
+      
+      
     
     
 end 
