@@ -29,9 +29,9 @@ module Players
       
       # If not close to winning, choose a random position
       position = rand(1..9)
-      until board.valid_move?(position)
-        position = rand(1..9)
-      end
+      # until board.valid_move?(position)
+      #   position = rand(1..9)
+      # end
       position.to_s
     end 
   end
