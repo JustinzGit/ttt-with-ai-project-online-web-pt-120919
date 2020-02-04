@@ -42,7 +42,9 @@ class GameController
     
     10.times do 
       game.play
-      
+      player_x += 1 if game.winner == "X"
+      player_o += 1 if game.winner == "O"
+      draw += 1 if game.draw
       
       
       
