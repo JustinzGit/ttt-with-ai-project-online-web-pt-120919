@@ -32,6 +32,7 @@ module Players
       until board.valid_move?(position)
         position = rand(1..9)
       end
+      position.to_s
     end 
   end
 end 
