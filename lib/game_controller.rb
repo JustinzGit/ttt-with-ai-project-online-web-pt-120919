@@ -13,6 +13,8 @@ class GameController
         one_player_game
       when "2" 
         two_player_game
+      when "wargames"
+        wargames
       end 
   end
   
@@ -30,4 +32,7 @@ class GameController
       game = Game.new
       game.play
   end
+  
+  def wargames
+    
 end 
