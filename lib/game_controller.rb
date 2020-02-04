@@ -48,4 +48,5 @@ class GameController
     end 
     
     puts "Player X won #{player_x} in war games."
+    puts "Player O won #{player_o} in war games."
 end 
