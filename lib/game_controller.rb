@@ -34,5 +34,8 @@ class GameController
   end
   
   def wargames
+    game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"))
+    game.play
+    
     
 end 
