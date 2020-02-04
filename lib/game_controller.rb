@@ -1,7 +1,6 @@
 class GameController
   
   def start
-    
     puts "Welcome to Tic-Tac-Toe"
     print "Select the number of players 0-2: "
     player_number = gets.strip
