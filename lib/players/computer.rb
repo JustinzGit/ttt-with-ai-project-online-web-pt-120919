@@ -20,12 +20,12 @@ module Players
       end
       
       # If close to winning a game, select winning position
-      combos.each do |combo|
-        if combo.count {|i| board.cells[i] == opponent_token} == 2 
-          position = combo.select {|i| board.cells[i] != opponent_token}
-          return position[0] + 1 if board.valid_move?(position[0] + 1)
-        end 
-      end 
+      # combos.each do |combo|
+      #   if combo.count {|i| board.cells[i] == opponent_token} == 2 
+      #     position = combo.select {|i| board.cells[i] != opponent_token}
+      #     return position[0] + 1 if board.valid_move?(position[0] + 1)
+      #   end 
+      # end 
       
       # If not close to winning, choose a random position
       position = rand(1..9)
