@@ -19,7 +19,7 @@ module Players
         self.token == "X" ? "O" : "X"
       end
       
-      If close to winning a game, select winning position
+      # If close to winning a game, select winning position
       combos.each do |combo|
         if combo.count {|i| board.cells[i] == opponent_token} == 2 
           position = combo.select {|i| board.cells[i] != opponent_token}
