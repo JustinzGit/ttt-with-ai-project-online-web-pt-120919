@@ -44,11 +44,8 @@ class GameController
       game.play
       player_x += 1 if game.winner == "X"
       player_o += 1 if game.winner == "O"
-      draw += 1 if game.draw
-      
-      
-      
-      
+      draw += 1 if game.draw?
+    end 
     
-    
+    puts "Player X won #{player_x} in war games."
 end 
