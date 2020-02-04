@@ -47,8 +47,8 @@ class GameController
       draw += 1 if game.draw?
     end 
     
-    puts "Player X won #{player_x} in war games."
-    puts "Player O won #{player_o} in war games."
-    puts "There were #{draw}(s) in war games."
+    puts "Player X won #{player_x} times in war games."
+    puts "Player O won #{player_o} times in war games."
+    puts "The number of draws were #{draw} in war games."
   end 
 end 
